@@ -38,7 +38,7 @@
     transition: all 1000ms ease-in-out;
 }
 
-.LearMore__btn-yellow:hover::after {
+.LearMore__btn-yellow::after {
     content: ""; 
     position: absolute; 
     left: 0; 
@@ -52,7 +52,7 @@
     position: relative; 
     transition: all 1000ms ease-in-out;
 }
-.LearMore__btn-pink:hover::after{
+.LearMore__btn-pink::after{
     content: ""; 
     position: absolute; 
     left: 0; 
