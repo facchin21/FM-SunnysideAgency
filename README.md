@@ -2,7 +2,7 @@
 
 Este es un proyecto desarrollado con React utilizando Vite como bundler y estilizado con Tailwind CSS. El objetivo es crear una página de inicio para una agencia ficticia llamada Sunnyside, siguiendo el diseño proporcionado en el desafío de Frontend Mentor.
 
-![Vista previa en móvil](https://raw.githubusercontent.com/facchin21/FM-SunnysideAgency/main/assets/130471266/bc345dc7-e7a8-40fc-bd73-33ce452db0ed.gif)
+![Vista previa en móvil](https://github.com/facchin21/FM-SunnysideAgency/issues/1#issue-2293067999)
 
 ## Funcionalidades
 
