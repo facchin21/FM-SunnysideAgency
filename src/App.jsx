@@ -15,8 +15,10 @@ function App() {
       <Banner />
       <TransformBrand/>
       <StandAudience/>
-      <GraphicDesign/>
-      <Photography/>
+      <div className='flex flex-col lg:flex-row'>
+        <GraphicDesign/>
+        <Photography/>
+      </div>
       <Testimonials/>
       <Image/>
       <Footer/>

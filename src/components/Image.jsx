@@ -14,7 +14,7 @@ export const Image = () => {
 
   return (
     <>
-      <div className="grid grid-cols-2 grid-rows-2">
+      <div className="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
         {images.map((image, index) => (
           <div key={index} className="h-auto w-auto">
             <img src={image.src} alt={image.alt} className="w-full h-full object-cover" />

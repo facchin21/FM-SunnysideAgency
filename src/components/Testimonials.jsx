@@ -25,14 +25,14 @@ export const Testimonials = () => {
     const title = ' Client Testimonials'
     
   return (
-    <div className='pt-12'>
+    <div className='pt-12 lg:py-64'>
         <h1 className='text-center
         text-veryDarkGrayishBlue font-fraunces
-         uppercase text-xl'>{title}
+         uppercase text-xl lg:text-3xl lg:pb-24 lg:pt-0'>{title}
         </h1>
 
         <div className='flex flex-col
-         justify-center items-center'>
+         justify-center items-center lg:flex-row'>
             {testimolias.map((testimonia, index) => {
                 return (
                     <div key={index} className='flex flex-col
