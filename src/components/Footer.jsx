@@ -51,7 +51,8 @@ export const Footer = () => {
             <li key={index}>
                 <a href={item.link}
                  className='text-textFooter font-semibold
-                 text-xl font-barlow'>
+                 text-xl font-barlow
+                 transition-all duration-300 hover:text-white'>
                     {item.title}
                 </a>
             </li>

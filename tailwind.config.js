@@ -22,7 +22,7 @@ export default {
         'veryLightGray' : "hsl(0, 0%, 98%)",
         'white' : "hsl(0, 0%, 100%)",
         'footer' : "#66AF9E",
-        'textFooter': '#2A7362',
+        'textFooter': '#2A7362'
       },
       fontFamily: {
         'barlow' : ['Barlow', 'sans-serif'],

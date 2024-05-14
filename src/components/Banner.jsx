@@ -16,7 +16,8 @@ const menuItems = [
     },
     {
         title : "Contact",
-        link : "#"
+        link : "#",
+        btnDifferent : true
     }
 ]
 
@@ -26,6 +27,7 @@ const mostrarMenu = () => {
     const menu = document.querySelector('.menu__container')
     menu.classList.toggle('menu__container--active')
 }
+const isMobile = window.innerWidth < 1024
 
 export const Banner = () => {
   return (
@@ -36,6 +38,8 @@ export const Banner = () => {
                 text-white font-barlow'>{title}
                 </h1>
             </div>
+
+            {isMobile ? (
             <div onClick={mostrarMenu} className='
             flex flex-col items-end cursor-pointer'>
                 {/* Icono menu */}
@@ -45,19 +49,38 @@ export const Banner = () => {
                     <path d="M4 12l16 0" />
                     <path d="M4 18l16 0" />
                 </svg>
-            <div className='menu__container pt-8 mr-2'>
-                <ul className='bg-white py-5 p-12'>
-                    {menuItems.map((item, index) => (
-                        <li key={index} className='py-3 px-6 my-4
-                        font-barlow text-center text-veryDarkGrayishBlue2
-                        font-semibold transition-all duration-300
-                        hover:text-black hover:bg-yellow rounded-3xl'>
-                             <a href={item.link}>{item.title}</a>   
-                         </li>
-                    ))}
-                </ul>
-            </div>
-            </div>
+
+                <div className='menu__container pt-8 mr-2'>
+                    <ul className='bg-white py-5 p-12'>
+                        {menuItems.map((item, index) => (
+                            <li key={index} className='py-3 px-6 my-4
+                            font-barlow text-center text-veryDarkGrayishBlue2
+                            font-semibold transition-all duration-300
+                            hover:text-black hover:bg-yellow rounded-3xl'>
+                                <a href={item.link}>{item.title}</a>   
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>) : (
+                <div>
+                    <ul className='flex gap-6 justify-center items-center mr-6'>
+                       {menuItems.map((item, index)=>
+                        <li key={index}>
+                            {item.btnDifferent ? (
+                                <a href={item.link} className='font-barlow font-semibold px-8 py-2 rounded-3xl transition-all duration-300
+                                 bg-white text-black hover:bg-veryLightGray'>  
+                                    {item.title}
+                                </a>
+                            ):
+                            <a href={item.link} className='text-white font-barlow font-semibold
+                            text-lg'>
+                                {item.title}
+                            </a>}
+                        </li>)} 
+                    </ul>
+                </div>
+            )}
         </header>
 
         <div className='w-full text-center flex 

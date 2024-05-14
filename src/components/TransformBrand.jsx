@@ -7,9 +7,9 @@ export const TransformBrand = () => {
   const description = 'We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.'
   return (
     <div className='flex flex-col lg:flex-row'>
-      <div className='lg:order-2 lg:w-full'>
+      <div className='lg:order-2 container__imageEgg'>
         <img src={imageEgg} alt="Imagen de un huevo"
-        className='lg:w-full'/>
+        className='w-full'/>
       </div>
 
         <div className='bg-veryLightGray text-center
